@@ -23,7 +23,7 @@ class Controller extends BaseController
             'success'=>false,
             'data'=>'no data available',
             'message'=>'your request is failed',
-            'status'=>400
+            'status'=>404
         ]);
     }
 }

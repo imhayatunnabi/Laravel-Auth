@@ -19,4 +19,13 @@ class ApiController extends Controller
         }
 
     }
+    public function singleUser($id){
+        $user = User::find($id);
+        if($user){
+            return $this->responseWithSuccess($user);
+        }
+        else{
+            return $this->responseWithError();
+        }
+    }
 }

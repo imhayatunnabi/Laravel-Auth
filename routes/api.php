@@ -17,3 +17,4 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/users',[ApiController::class,'index']);
+Route::get('/users/{id}',[ApiController::class,'singleUser']);
