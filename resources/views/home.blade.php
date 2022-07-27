@@ -19,5 +19,12 @@
             </div>
         </div>
     </div>
+    <div class="row">
+        @foreach ($users as $user)
+        <div class="col-lg-12">
+            {{$user->name}}
+        </div>
+        @endforeach
+    </div>
 </div>
 @endsection
