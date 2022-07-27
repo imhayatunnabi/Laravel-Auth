@@ -19,12 +19,24 @@
             </div>
         </div>
     </div>
-    <div class="row">
-        @foreach ($users as $user)
-        <div class="col-lg-12">
-            {{$user->name}}
-        </div>
-        @endforeach
+    <div class="container">
+        <table class="table table-striped table-inverse table-responsive">
+            <thead class="thead-inverse">
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                </tr>
+                </thead>
+                <tbody>
+                    @foreach ($users as $user)
+                    <tr>
+                        <td scope="row">{{$user->name}}</td>
+                        <td scope="row">{{$user->email}}</td>
+                    </tr>
+                    @endforeach
+                </tbody>
+        </table>
+
     </div>
 </div>
 @endsection
