@@ -17,4 +17,7 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/users',[ApiController::class,'index']);
-Route::get('/users/{id}',[ApiController::class,'singleUser']);
+Route::get('/users/{id}',[ApiController::class,'user']);
+Route::delete('/users/{id}',[ApiController::class,'delete']);
+Route::post('/users/create',[ApiController::class,'create']);
+
